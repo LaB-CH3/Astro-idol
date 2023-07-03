@@ -1,0 +1,91 @@
+---
+import Bomb from '../assets/bomb.svg'
+import Mailbox from '../assets/mailbox.svg'
+import Folder from '../assets/folder.svg'
+import Savings from '../assets/savings.svg'
+import Gift from '../assets/gift.svg'
+---
+
+
+<section class="product-hero">
+    <div class="container">
+        <div class="d-table">
+            <div class="d-table-cell center">
+                <div class="hero-copy">
+                    <h1 class="h1-title">Automate your design process for creative freedom</h1>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dignissimos exercitationem nesciunt, quo quibusdam assums? Architecto, placeat libero. </p>
+                    <div class="product-cta">
+                      <a href="#" class="button button-primary u-full-width">Start Trial — It's Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-media">
+            <img src={Bomb} alt="Dynamite">
+            <img src={Mailbox} alt="Mailbox">
+            <img src={Folder} alt="Folder">
+            <img src={Savings} alt="Money">
+            <img src={Gift} alt="Gift">
+        </div>
+    </div>
+ </section>
+
+ <style lang="scss">
+
+
+.product-hero{
+  padding: 50px 0;
+  .container{
+    position: relative;
+    .d-table{
+      height: 500px;
+     }
+  }
+  .hero-media{
+    padding: 5px;
+    border-radius: 48px;
+  }
+  .hero-copy{
+    h1, p{
+      max-width: 600px;
+      margin: 20px auto;
+    }
+  }
+  .hero-media{
+    img{
+      position: absolute;
+      width: 160px;
+      &:nth-child(1){
+        top: 0;
+        left: -100px;
+      }
+      &:nth-child(2){
+        top: 0;
+        right: -100px;
+      }
+      &:nth-child(3){
+        top: 250px;
+        left: 0;
+      }
+      &:nth-child(4){
+        top: 250px;
+        right: 0;
+      }
+      &:nth-child(5){
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width:700px) {
+      img{
+        &:nth-child(2), &:nth-child(3),
+        &:nth-child(4){
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+ </style>

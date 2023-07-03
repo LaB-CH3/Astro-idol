@@ -1,0 +1,138 @@
+---
+import Stars from '../assets/stars.svg'
+---
+
+<section class="product-reviews" id="customers">
+    <div class="container">
+        <div class="center">
+            <div class="text-container">
+                <h3 class="h1-title">Trusted by the companies you trust</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus deleniti illo corporie.</p>
+            </div>
+
+            <div class="customer-reviews m-margin">
+                <div class="flex center">
+                    <img src={Stars}>
+                    <span class="s-paragraph">Base on 87,00+ reviews</span>
+                </div>
+                <small><strong>1 millon</strong> customers and counting</small>
+            </div>
+            <div class="center">
+                <a href="#" class="button button-primary">Start Trial — It's Free</a>
+                <small class="block">No credit card required.</small>
+            </div>
+        </div>
+
+        <div class="customer-avatars">
+           <div class="left-side-avatars">
+              <div class="circular-image">
+                <img src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=800">
+               </div>
+               <div class="circular-image">
+                 <img src="https://images.pexels.com/photos/1493111/pexels-photo-1493111.jpeg?auto=compress&cs=tinysrgb&w=800">
+               </div>
+               <div class="circular-image">
+                 <img src="https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=800">
+               </div>
+               <div class="circular-image">
+                   <img src="https://images.pexels.com/photos/3058391/pexels-photo-3058391.jpeg?auto=compress&cs=tinysrgb&w=800">
+               </div>
+           </div>
+           <div class="right-side-avatars">
+            <div class="circular-image">
+              <img src="https://images.pexels.com/photos/12599059/pexels-photo-12599059.jpeg?auto=compress&cs=tinysrgb&w=800">
+             </div>
+             <div class="circular-image">
+               <img src="https://images.pexels.com/photos/3394657/pexels-photo-3394657.jpeg?auto=compress&cs=tinysrgb&w=800">
+             </div>
+             <div class="circular-image">
+               <img src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=800">
+             </div>
+             <div class="circular-image">
+                 <img src="https://images.pexels.com/photos/3756985/pexels-photo-3756985.jpeg?auto=compress&cs=tinysrgb&w=800">
+             </div>
+          </div>
+        </div>
+    </div>
+ </section>
+
+
+ <style lang="scss">
+
+  .product-reviews{
+    padding: 80px 0;
+    background-color: #fff;
+    .customer-reviews{
+      img{
+        width: 80px;
+      }
+      span{
+         margin-left: 10px;
+      }
+    }
+    .text-container{
+      max-width: 400px;
+      margin: 10px auto;
+    }
+    p, h3{
+      margin: 10px 0;
+    }
+    .container{
+      padding: 70px 0;
+      position: relative;
+      
+    }
+    .customer-avatars{
+      .circular-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        img{
+          width: 100%;
+        }
+      }
+
+      .circular-image{
+        position: absolute;
+      }
+      .left-side-avatars .circular-image{
+        &:nth-child(1){
+          top: 0; left: 20%;
+        }
+        &:nth-child(2){
+          top: 14%; left: 5%;
+        }
+        &:nth-child(3){
+          bottom: 14%; left: 5%;
+        }
+        &:nth-child(4){
+          bottom: 0%; left: 20%;
+        }
+      }
+      .right-side-avatars .circular-image{
+        &:nth-child(1){
+          top: 0; right: 20%;
+        }
+        &:nth-child(2){
+          top: 14%; right: 5%;
+        }
+        &:nth-child(3){
+          bottom: 14%; right: 5%;
+        }
+        &:nth-child(4){
+          bottom: 0%; right: 20%;
+        }
+      }
+     
+    }
+
+    @media (max-width:700px) {
+      .circular-image img{
+        display: none;
+      }
+    }
+  }
+ </style>

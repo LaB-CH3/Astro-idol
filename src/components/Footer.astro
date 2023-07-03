@@ -1,0 +1,72 @@
+---
+import LinkedIn from '../assets/linkedin.svg'
+import Twitter from '../assets/twitter.svg'
+---
+
+<footer>
+    <div class="container row">
+        <div class="footer-link flex js one-half column">
+            <a href="#">About</a> <a href="#">Help Center</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a> 
+        </div>
+        <div class="footer-note one-half column">
+            <div class="u-pull-right">
+                <div class="flex">
+                    <p>© Idol 2023</p>
+                    <a href="#"><img src={Twitter} alt="Twitter icon"></a>
+                    <a href="#"><img src={LinkedIn} alt="Linkedin icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style lang="scss">
+  .flex{
+    display: flex;;
+  }
+footer{
+    padding: 40px 0;
+    background-color: #fff;
+
+    a, p{
+      color: #222;
+      font-size: 1.8rem;
+    }
+    .footer-link a{
+      padding-right: 20px;
+      text-decoration: none;
+    }
+    .container{
+      padding: 30px;
+      border-radius: 50px;
+      
+      .footer-note{
+        a{
+          padding-left: 20px;
+          img{
+            width: 28px;
+            @media (max-width: 700px) {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width:700px) {
+      p, a{
+        font-size: 1.5rem;
+      }
+        .flex{
+            justify-content: center;
+        }
+        .column{
+            padding: 10px 0;
+        }
+        .u-pull-right{
+            float: none;
+        }
+    }
+  }
+</style>

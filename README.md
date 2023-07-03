@@ -1,16 +1,10 @@
-# Astro Starter Kit: Basics
+# Idol
 
-```
-npm create astro@latest -- --template basics
-```
+Landing page template for mirco SaaS products
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+![basics](./src/demo/idol.png)
 
 ## 🚀 Project Structure
 
@@ -21,8 +15,14 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
+    ├── assets/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Brief.astro
+        └── Customer.astro
+        └── Footer.astro
+        └── Header.astro
+        └── Hero.astro
+        └── Pricing.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
