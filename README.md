@@ -1,4 +1,4 @@
-# Idol
+# Astro Idol
 
 Landing page template for mirco SaaS products
 
@@ -47,6 +47,13 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [my store](https://buymeacoffee.com/d2our1c/extras) or hit me up on [Instagram](https://instagram.com/tonia.dev) if you have any questions
+
+
+
+## 👀 Curious to Explore More?
+
+Check out [LAB-CH3](https://github.com/LaB-CH3) for a growing collection of current and future templates.
+
+If you’ve found this helpful, consider fueling my creativity!  
+[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/d2OuR1c)
