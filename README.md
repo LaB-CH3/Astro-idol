@@ -8,7 +8,6 @@ Landing page template for mirco SaaS products
 ### Upgrade to Astrodol Pro version
 (https://idolpro.indiebold.com/)
 
-![basics](./src/demo/idol-thumbnail.png)
 
 ## 🚀 Project Structure
 
@@ -37,6 +36,10 @@ Inside of your Astro project, you'll see the following folders and files:
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
+
+## Preview
+![basics](./src/demo/idol-thumbnail.png)
+
 
 ## 🧞 Commands
 
